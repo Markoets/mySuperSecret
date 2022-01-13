@@ -1,7 +1,7 @@
-const express = require('express-session');
+
 const passport = require('passport');
-const mongoose = require('mongoose');
-const User = mongoose.model('User');
+
+const User = require ('../models/user')
 
 exports.getMainPage = (req,res)=>{
     res.render('index');
